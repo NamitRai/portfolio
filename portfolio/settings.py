@@ -25,7 +25,7 @@ SECRET_KEY = 's)e84vub5x-u96+_h5)*m@ucm!sfr#+^@-@w#+kh=$!e04tk)2'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['namitportfolio.herokuapp', 'localhost']
+ALLOWED_HOSTS = ['namitportfolio.herokuapp.com', ]
 
 
 # Application definition
