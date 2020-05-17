@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -12,7 +13,7 @@
       content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
     />
     <meta name="generator" content="Jekyll v4.0.1" />
-    <title>Album example · Bootstrap</title>
+    <title>Namit Rai</title>
 
     <!-- Bootstrap core CSS -->
     <link
@@ -47,7 +48,7 @@
   <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Namit Rai</a>
+        <a class="navbar-brand" href="{% url 'home' %}">Namit Rai</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -61,9 +62,20 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ml-auto">
-            <a class="nav-item nav-link" href="#">Blog </a>
-            <a class="nav-item nav-link" href="#">Twitter</a>
-            <a class="nav-item nav-link" href="#">Resume</a>
+            <a class="nav-item nav-link" href="{% url 'blog' %}">Blog </a>
+            <a
+              class="nav-item nav-link"
+              href="https://www.linkedin.com/in/namit-rai-0bb469148"
+              >Linkedin</a
+            >
+            <a
+              class="nav-item nav-link"
+              href="https://www.instagram.com/rainamit73/"
+              >Instagram</a
+            >
+            <a class="nav-item nav-link" href="{% static '/Resume.pdf' %}"
+              >Resume</a
+            >
           </div>
         </div>
       </nav>
@@ -83,6 +95,12 @@
               >Email me</a
             >
           </p>
+          <img
+            class="img-fluid"
+            src="{% static '/mypic.jpg' %}"
+            height="300"
+            width="300"
+          />
         </div>
       </section>
 

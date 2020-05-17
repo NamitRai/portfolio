@@ -6,6 +6,7 @@ from .models import Blog
 
 def blog(request):
     blogs = Blog.objects
+    print(blogs.all)
     return render(request, 'blog/blog.html', {'blog': blogs})
 
 
